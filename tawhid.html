@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4xTAWHID Gaming Login</title>
+    <style>
+        body {
+            background-color: #050505;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-card {
+            background: #111;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px #ff0055;
+            width: 320px;
+            text-align: center;
+            border: 2px solid #ff0055;
+        }
+
+        h1 {
+            color: #ff0055;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #ff0055;
+        }
+
+        p { color: #888; font-size: 14px; margin-bottom: 25px; }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 8px 0;
+            background: #222;
+            border: 1px solid #444;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #ff0055;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #ff0055;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <h1>4xTAWHID</h1>
+        <p></p>
+        
+        <input type="number" id="userNumber" placeholder="মোবাইল নম্বর">
+        <input type="password" id="userPass" placeholder="গোপন পাসওয়ার্ড">
+        
+        <button onclick="checkAccess()">লগইন করুন</button>
+    </div>
+
+    <script>
+        function checkAccess() {
+            var number = document.getElementById("userNumber").value;
+            var pass = document.getElementById("userPass").value;
+
+            // আপনার দেওয়া নির্দিষ্ট নম্বর এবং পাসওয়ার্ড
+            var correctNumber = "01884659945";
+            var correctPass = "0987";
+
+            if(number === correctNumber && pass === correctPass) {
+                alert("সঠিক তথ্য! গেমে প্রবেশের দরজা খুলে গেছে।");
+                // এখানে সফলভাবে প্রবেশের পর কি হবে তা দিতে পারেন
+                // window.location.href = "game_main.html"; 
+            } else {
+                alert("ভুল নম্বর বা পাসওয়ার্ড! আবার চেষ্টা করুন।");
+            }
+        }
+    </script>
+
+</body>
+</html>

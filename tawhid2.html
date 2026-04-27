@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বন্ধুত্বের গল্প</title>
+    <style>
+        /* ব্যাকগ্রাউন্ড ও ফন্ট সেটআপ */
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #1a1a2e, #16213e, #0f3460);
+            font-family: 'Hind Siliguri', sans-serif; /* বাংলা সুন্দর ফন্ট */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* উপরে ডান কোণায় আপনার নাম */
+        .header-logo {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+        }
+
+        /* গল্পের কার্ড */
+        .story-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            color: #f7d08a;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #f7d08a;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 18px;
+            color: #e0e0e0;
+        }
+
+        .highlight {
+            color: #ff4b2b;
+            font-weight: bold;
+        }
+
+        /* অ্যানিমেশন */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ছোট ডিভাইসের জন্য */
+        @media (max-width: 600px) {
+            .story-card { width: 85%; padding: 20px; }
+            .header-logo { font-size: 18px; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header-logo">4xᴛᴀᴡʜɪᴅ</div>
+
+    <div class="story-card">
+        <h1>একটি নিস্বার্থ বন্ধুত্বের গল্প</h1>
+        <p>
+            পৃথিবীর ভিড়ে অনেক মানুষ আসে, কিন্তু সবাই বন্ধু হতে পারে না। প্রকৃত বন্ধু সেই, যে বিপদের মেঘ দেখে সরে যায় না, বরং ছাতা হয়ে পাশে দাঁড়ায়। আমার জীবনেও এমন একজন বন্ধু আছে, যার বিশ্বাস আর সাহস আমাকে প্রতিটি পদক্ষেপে অনুপ্রেরণা দেয়।
+        </p>
+        <p>
+            বন্ধু মানে শুধু আড্ডা আর হাসি নয়, বন্ধু মানে এক বিশাল ভরসার নাম। <span class="highlight">"বন্ধু, তুই আছিস বলেই পথ চলাটা এত সহজ।"</span> আমরা হয়তো সব সময় এক সাথে থাকি না, কিন্তু হৃদয়ের টানটা সব সময় এক।
+        </p>
+        <p>
+            তোর মতো একজন বন্ধু পাওয়া ভাগ্যের ব্যাপার। আমাদের এই বন্ধুত্ব অটুট থাকুক হাজার বছর। নিজের বন্ধুকে নিয়ে গর্ব করা যায়, এমন বন্ধু সবার ভাগ্যে জুটে না!
+        </p>
+    </div>
+
+</body>
+</html>
